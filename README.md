@@ -1,14 +1,14 @@
 # Welcome to NoSleepCreative
-
-## Updates:
-
-12 October 2020 - Some of my content here are disappearing as I am migrating them into my private Notion database for easier curation. Not to worry, everything related to Motion Design will remain here.
-
 ## ABOUT
 
 **A site dedicated to curating knowledge pertaining to Motion Design: a discipline that fuses graphic design, animation, film-making and everything I know to help you lead better lives!** I have too many thoughts these days; and I love writing.  This is where I channel all my ideas, best practices or theories about life I neologized. I wouldn't call this a blog but rather a **virtual copy of my brain;** a place where I can evaluate my thoughts, built upon them, and crystallize them into valuable knowledge.&#x20;
 
 This site is run by [**Desmond Du It Better**](https://www.duitbetter.com)
+
+## Updates:
+
+12 October 2020 - Some of my content here are disappearing as I am migrating them into my private Notion database for easier curation. Not to worry, everything related to Motion Design will remain here.
+
 
 **Contributed by:**
 
