@@ -58,7 +58,7 @@ sudo kill -9 2587
 
 ### Get path directory of file (hold option + RMB)
 
-![](../../../.gitbook/assets/MAC\_copyPathname.gif)
+![](../../.gitbook/assets/MAC\_copyPathname.gif)
 
 ## Notes
 

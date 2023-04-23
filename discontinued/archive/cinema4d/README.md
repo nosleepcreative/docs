@@ -91,11 +91,11 @@ In polygon mode, double clicking any part of the mesh will select it and all the
 3. &#x20;Get IP address of child computers
 4. Team Render to Picture Viewer
 
-![](../../.gitbook/assets/c4d\_teamRender1.png)
+![](../../../.gitbook/assets/c4d\_teamRender1.png)
 
-![](../../.gitbook/assets/c4d\_teamRender2.png)
+![](../../../.gitbook/assets/c4d\_teamRender2.png)
 
-![](../../.gitbook/assets/c4d\_teamRender3.png)
+![](../../../.gitbook/assets/c4d\_teamRender3.png)
 
-![](../../.gitbook/assets/c4d\_teamRender4.png)
+![](../../../.gitbook/assets/c4d\_teamRender4.png)
 

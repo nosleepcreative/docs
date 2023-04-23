@@ -80,7 +80,7 @@ There are three ways of manipulating and copying points
    1. string , name: "instance", String: /obj/demo1
    2. /obj/demo\`round(fit01(rand(@ptnum),1,2))\`
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../../.gitbook/assets/image (6).png>)
 
 ### **Random geometry with copytoPoints**
 

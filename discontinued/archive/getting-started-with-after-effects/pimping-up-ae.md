@@ -60,7 +60,7 @@ Essentially, you want to use the same principles as above: having a consistent f
 
 ### Folder Structures
 
-{% file src="../../.gitbook/assets/nsc_folderStructure_AE_v1.zip" %}
+{% file src="../../../.gitbook/assets/nsc_folderStructure_AE_v1.zip" %}
 After Effects Folder Structures
 {% endfile %}
 
@@ -68,7 +68,7 @@ After Effects Folder Structures
 
 Under Preferences > New Project  > Choose Project Template > Select AEP to use for startup
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2).png>)
 
 ## After Effects Output Modules (AOM)
 
@@ -97,9 +97,9 @@ If you want to save a render-settings template for use on another system
 
 Have a item in the render queue > `Output Module` > `Make Template` > `Load` > Select AOM file
 
-![](<../../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (15).png>)
 
-{% file src="../../.gitbook/assets/nsc_2020_11 (2).aom" %}
+{% file src="../../../.gitbook/assets/cm_2020_11_ddu (2).aom" %}
 NSC After Effects Output Modules
 {% endfile %}
 

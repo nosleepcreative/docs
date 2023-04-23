@@ -509,7 +509,7 @@ foreach(int pt; pts){
 
 ## Spreading points in one axis
 
-![](<../../.gitbook/assets/image (38).png>)
+![](<../../../.gitbook/assets/image (38).png>)
 
 ```c
 @P.y = normalize(curlnoise(@P+@Time*.02)*0.5);
@@ -519,7 +519,7 @@ foreach(int pt; pts){
 
 ## Color
 
-![](../../.gitbook/assets/vex\_cd\_bands.gif)
+![](../../../.gitbook/assets/vex\_cd\_bands.gif)
 
 ### Band(s) of color moving across geo in one-axis
 

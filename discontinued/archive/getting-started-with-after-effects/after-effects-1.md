@@ -156,7 +156,7 @@ As a motion designer, I highly recommend everyone to build their own library of 
 
 Select the properties / property groups that you want > `animation menu` > `Save as Animation Preset`
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../../.gitbook/assets/image (11).png>)
 
 ### How to save Render Settings(ars) and Output Modules (aom)
 
