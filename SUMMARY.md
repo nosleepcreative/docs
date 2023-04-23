@@ -6,6 +6,7 @@
 
 * [Getting Started with Expressions](after-effects/getting-started.md)
 * [Expressions & Snippets](after-effects/expressions/README.md)
+  * [JSX Cheatsheet](after-effects/expressions/jsx-cheatsheet.md)
   * [Utilities](after-effects/expressions/utilities.md)
   * [Shape & Mask Paths](after-effects/expressions/shape-and-mask-paths.md)
   * [Type & Text](after-effects/expressions/type-and-text.md)
