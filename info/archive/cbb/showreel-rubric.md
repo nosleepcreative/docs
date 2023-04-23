@@ -12,7 +12,7 @@ In late 2019, I saw a senior motion designer position at my company; and thought
 
 
 
-![4 zones of Awesomeness by onepixelbrush](<../../.gitbook/assets/image (31).png>)
+![4 zones of Awesomeness by onepixelbrush](<../../../.gitbook/assets/image (31).png>)
 
 Above is good way to set parameters for what makes a work good.
 
