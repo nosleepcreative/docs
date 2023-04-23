@@ -1,80 +1,10 @@
 ---
-description: 'Last update : 24 April 2021'
+description: >-
+  Here are list of useful expressions I curated and written. This page is
+  currently being sorted into the pages under Cookbook & JSX Cheatsheet
 ---
 
 # Expressions & Snippets
-
-## Abstract
-
-Here are list of useful expressions I curated and written.&#x20;
-
-⚠️This page is currently being sorted into the pages under **Cookbook,** so some expressions that you usually reference here has been moved to those pages.
-
-## Javascript basics
-
-```javascript
-// Declaration
-var myVariable; 
-var 🍎,🍐,🍐
-
-// Initialization
-var fruit = 🍎;
-var fruitArray = [🍏,🍎,🍐,🍊,🍋,🍌,🍉,🍇];
-String
-"string is text"
-
-// For-Loops
-for( var i = 0; i < value ; i++){
-    statement
-}
-
-//if/else statements
-if (fruit){
-    statement} else {
-statement}
-
-    // Shorthand if statement
-    if(x==1) 10; 
-    
-    // Using ternary operation
-    condition ? exprIfTrue : exprIfFalse
-    
-// ternary
-x = (y>=5)? 20:50; // if checkbox is true, 20 else 50
-
-//Object
-var x = {firstName:"John", lastName:"Doe"}; //
-
-// Regular Expressions (Regex)
-"\n"
-
-// Single line comment
-
-/* Multi-line comment
-Etiam aliquet et mi quis tempor. 
-Nulla ullamcorper, sapien in molestie rhoncus, 
-justo magna molestie dolor, 
-Nullam dignissim interdum mi sit a */
-
-```
-
-### Preferred shorthand for naming variables
-
-```javascript
-velocity = v or vel  
-multiplier = mul;
-position = pos, myPos
-distance = dst
-sourceRect = s
-myLayer
-myNumLayers
-
-target = tgt
-```
-
-### Good practice
-
-* Declare variable before loop statements
 
 ## Transformation
 
@@ -371,7 +301,7 @@ seedRandom(0,true);
 Math.sin(time*vel+random(index))*100;
 ```
 
-![](<../../.gitbook/assets/flicker\_rand\_sinIndex (1).gif>)
+![](../../.gitbook/assets/flicker\_rand\_sinIndex.gif)
 
 ```javascript
 // 'Wave flickering'
@@ -635,7 +565,7 @@ maxDist= 960;
 
 ### Carousel / Rotating layers&#x20;
 
-![](<../../.gitbook/assets/carousel continuous.gif>)
+![](<../../.gitbook/assets/carousel continuous (1).gif>)
 
 ```javascript
 /*  There needs to be two layers named 'startCard' & 'endCard'

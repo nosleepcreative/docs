@@ -183,7 +183,7 @@ seedRandom(0,true);
 Math.sin(time*vel+random(index))*100;
 ```
 
-![](<../../.gitbook/assets/flicker\_rand\_sinIndex (1).gif>)
+![](../../.gitbook/assets/flicker\_rand\_sinIndex.gif)
 
 ```javascript
 // 'Wave flickering'
