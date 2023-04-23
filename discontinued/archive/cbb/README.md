@@ -202,7 +202,7 @@ I believe everyone has the answers and talents they are looking for in them alre
 
 ## Developing your creative practice ⭐️
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../../.gitbook/assets/image (14).png>)
 
 ### What is a creative practice
 
