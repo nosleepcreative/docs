@@ -99,3 +99,8 @@ Regular expressions are patterns used to match character combinations in strings
 ```
 "\n"
 ```
+
+## Additional Readings
+
+* [https://gitbook.gitbook.io/learn-javascript/](https://gitbook.gitbook.io/learn-javascript/)
+* [https://learnjavascript.online/app.html?id=1437](https://learnjavascript.online/app.html?id=1437)
