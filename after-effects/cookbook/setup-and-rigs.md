@@ -21,7 +21,7 @@ Give enough user controls that effectively does the job and not confuse or overw
 * `blue label` - secondary stuff for your own development purposes or for users to troubleshoot or their own
 * `gray label` for anything that the user should not touch
 
-!["readme" sample from plant rigs](<../../.gitbook/assets/image (3).png>)
+!["readme" sample from plant rigs](<../../.gitbook/assets/image (3) (1).png>)
 
 ### **Writing a user guide or readme**
 

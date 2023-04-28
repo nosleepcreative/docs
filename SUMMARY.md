@@ -29,6 +29,12 @@
   * [Utilities](after-effects/scripting/utilities.md)
 * [ScriptUI](after-effects/scriptui.md)
 
+***
+
+* [Nexrender](nexrender/README.md)
+  * [Terminology](nexrender/terminology.md)
+  * [Project Files Preparation](nexrender/project-files-preparation.md)
+
 ## Python
 
 * [Python](python/python/README.md)
