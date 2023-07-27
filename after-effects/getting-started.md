@@ -74,7 +74,11 @@ Not really, I would say there is the School of Motion's Expression course but I 
 
 ### Best way to learn expressions
 
-![](../.gitbook/assets/tenor.gif)
+<div align="left">
+
+<img src="../.gitbook/assets/tenor.gif" alt="">
+
+</div>
 
 #### Play
 

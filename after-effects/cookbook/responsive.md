@@ -2,7 +2,7 @@
 
 ### Carousel / Rotating layers&#x20;
 
-![](<../../.gitbook/assets/carousel continuous (1).gif>)
+![](<../../.gitbook/assets/carousel continuous.gif>)
 
 ```javascript
 /*  There needs to be two layers named 'startCard' & 'endCard'

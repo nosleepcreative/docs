@@ -40,12 +40,19 @@ function findLayerbyName(str) {
 findLayerbyName("matte")
 ```
 
-## Text repeater
+## SourceText Repeater
 
 {% tabs %}
-{% tab title="normal" %}
+{% tab title="repeat()" %}
 ```javascript
-var n = 8; // connect to a slider 
+n = 10; // number to times to repeat
+value.repeat(n)
+```
+{% endtab %}
+
+{% tab title="for-loop" %}
+```javascript
+var n = 8; // number of times to repeat
 s = myText = value;
 for(i=1; i<n; i++) s += myText; 
 s;

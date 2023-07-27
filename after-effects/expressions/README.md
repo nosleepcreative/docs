@@ -301,7 +301,7 @@ seedRandom(0,true);
 Math.sin(time*vel+random(index))*100;
 ```
 
-![](../../.gitbook/assets/flicker\_rand\_sinIndex.gif)
+![](<../../.gitbook/assets/flicker\_rand\_sinIndex (1).gif>)
 
 ```javascript
 // 'Wave flickering'
@@ -565,7 +565,7 @@ maxDist= 960;
 
 ### Carousel / Rotating layers&#x20;
 
-![](<../../.gitbook/assets/carousel continuous (1).gif>)
+![](<../../.gitbook/assets/carousel continuous.gif>)
 
 ```javascript
 /*  There needs to be two layers named 'startCard' & 'endCard'
