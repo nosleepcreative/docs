@@ -40,7 +40,11 @@ function findLayerbyName(str) {
 findLayerbyName("matte")
 ```
 
-## SourceText Repeater
+## SourceText&#x20;
+
+### Repeater
+
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="repeat()" %}
@@ -68,6 +72,109 @@ s;
 ```
 {% endtab %}
 {% endtabs %}
+
+### Repeater - Grid
+
+<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+
+```javascript
+// User Input:
+var numRows = 10; // Number of rows in the output
+var numColumns = 22; // Number of columns in the output
+var s = value; // Enter the value to be repeated in each cell
+
+// Seed
+var result = "";
+var j = 0;
+while (j < numRows) {
+  var k = 0;
+  while (k < numColumns) {
+    result += s; // Placeholder for the actual random alphanumeric generation code
+    k += 1;
+  }
+  result += "\r";
+  j += 1;
+}
+
+result;
+```
+
+### Random Characters
+
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
+{% tabs %}
+{% tab title="Solution 1" %}
+{% code lineNumbers="true" fullWidth="true" %}
+```javascript
+// User Input
+var numOfLetters = 10; // Modify the number of letters to generate
+var useSpaces = true; // Modify to include spaces between letters (true) or not (false)
+var changeEveryFrame = false; // Modify if the generated letters should change every frame
+
+// Don’t modify below this line
+seedRandom(index, !changeEveryFrame);
+
+function genLetter() {
+  var r = random(65, 90); // Generate a random number representing a letter (ASCII code for A to Z)
+  return String.fromCharCode(r); // Convert the number to the corresponding letter character
+}
+
+var result = "";
+for (var i = 0; i < numOfLetters; i++) {
+  result += genLetter();
+  if (useSpaces) {
+    result += " "; // Add a space between letters if useSpaces is true
+  }
+}
+result; 
+
+//source: https://creativecow.net/forums/thread/random-letters-4/
+
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Solution 2" %}
+```javascript
+// Number of rows in the output
+var numRows = 1;
+
+// Number of characters in each row of the output
+var numChars = 5;
+
+// Number of frames to hold the same random seed
+var holdFrames = 5;
+
+// Calculate the seed for randomization based on time and holdFrames
+var seed = Math.floor(time / (holdFrames * thisComp.frameDuration));
+seedRandom(seed, true);
+
+var result = "";
+var j = 0;
+
+while (j < numRows) {
+  var k = 0;
+  
+  while (k < numChars) {
+    var randomCharCode = Math.floor(random(65, 91)); // Generate random number representing uppercase letter in ASCII
+    result += String.fromCharCode(randomCharCode); // Convert random number to corresponding letter character
+    k += 1;
+  }
+  
+  result += "\r"; // Add a carriage return at the end of each row
+  j += 1;
+}
+
+result; // Output the generated string
+
+```
+{% endtab %}
+{% endtabs %}
+
+##
+
+##
 
 ## Parsing text
 

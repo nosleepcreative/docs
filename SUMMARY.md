@@ -27,6 +27,7 @@
 * [Getting started with Scripting](after-effects/getting-started-with-scripting.md)
 * [Scripting](after-effects/scripting/README.md)
   * [Utilities](after-effects/scripting/utilities.md)
+  * [Master Properties](after-effects/scripting/master-properties.md)
 * [ScriptUI](after-effects/scriptui.md)
 
 ***
