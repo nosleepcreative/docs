@@ -8,7 +8,7 @@
 * [Expressions & Snippets](after-effects/expressions/README.md)
   * [JSX Cheatsheet](after-effects/expressions/jsx-cheatsheet.md)
   * [Utilities](after-effects/expressions/utilities.md)
-  * [Shape & Mask Paths](after-effects/expressions/shape-and-mask-paths.md)
+  * [Shape & Mask](after-effects/expressions/shape-and-mask-paths.md)
   * [Type & Text](after-effects/expressions/type-and-text.md)
 * [Cookbook](after-effects/cookbook/README.md)
   * [Algorithmic](after-effects/cookbook/algebraic.md)

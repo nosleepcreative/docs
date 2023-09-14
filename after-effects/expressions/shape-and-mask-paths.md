@@ -1,4 +1,4 @@
-# Shape & Mask Paths
+# Shape & Mask
 
 ## General tips
 
@@ -34,7 +34,7 @@ if (numKeys >1 && time > key(numKeys).time){
 {% endtab %}
 
 {% tab title="cycle" %}
-```
+```javascript
 if (numKeys >1 && time > key(numKeys).time){
  t1 = key(1).time;
  t2 = key(numKeys).time;
@@ -50,13 +50,47 @@ if (numKeys >1 && time > key(numKeys).time){
 
 ## Accessing Shape parameters
 
+Reference: [https://ae-expressions.docsforadobe.dev/group.html?highlight=shape%20property#group](https://ae-expressions.docsforadobe.dev/group.html?highlight=shape%20property#group)
+
+### Syntax & Usage
+
+```javascript
+thisProperty.propertyGroup(1).numProperties
+thisProperty.propertyGroup(1).propertyIndex
+```
+
+### Shape Property Index
+
+Let's say if you have multiple Ellipses or other shapes within a Shape Layer Contents, and you want to retrieve the index of each Shape:
+
+```javascript
+content("Ellipse 1").propertyIndex
+```
+
+```javascript
+thisProperty.propertyGroup(3).propertyIndex
+```
+
+If you want to use parse the index via the property name:
+
+```javascript
+// using name as index eg. line_1
+parseInt(thisProperty.propertyGroup(3).name.split("_")[1]); // method 1
+
+parseInt(content(1).name.split("_")[1]) // method 2
+```
+
 ### Shape Property Group and Index
 
 ```javascript
 // shape group index
 thisProperty.propertyGroup(2).propertyIndex // change num accordingly
 
-// using name as index eg. line_1
-parseInt(thisProperty.propertyGroup(3).name.split("_")[1]); // method 1
-parseInt(content(1).name.split("_")[1]) // method 2
+
 ```
+
+### Examples
+
+* [Property Group Index Expression + Free Preset](https://youtu.be/xgUNncvKXY8)
+
+{% embed url="https://youtu.be/xgUNncvKXY8" %}
