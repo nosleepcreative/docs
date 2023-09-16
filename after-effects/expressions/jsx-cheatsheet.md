@@ -36,7 +36,7 @@ For-loops are used to iterate over a block of code multiple times.
 
 ```javascript
 for (var i = 0; i < value; i++) {
-  statement
+  // statement
 }
 ```
 
@@ -66,6 +66,20 @@ Ternary operations are a shorthand way to write if/else statements and return a 
 
 ```javascript
 x = (y >= 5) ? 20 : 50;
+```
+
+## Function
+
+A function is a block of code in programming that performs a specific task or set of tasks. It's like a reusable mini-program within a larger program. Imagine them as a pre-compositions in After Effects.
+
+Functions are designed to take some input (known as **arguments** or parameters), process that input, and then **return** an output or perform an action.
+
+Similar to variables, functions must be declared. In the below example, a function `double` that accepts an **argument** called `x` and **returns** the double of x :
+
+```javascript
+function double(x) {
+  return 2 * x;
+}
 ```
 
 ## Object
