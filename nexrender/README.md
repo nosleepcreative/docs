@@ -42,7 +42,7 @@ Prior to setup your rendering cluster, you should familiarize yourself with send
 
 ## How to set up a nexrender cluster
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Web Server & Environment Setup
 

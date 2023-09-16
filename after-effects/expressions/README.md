@@ -8,46 +8,57 @@ description: >-
 
 ## Transformation
 
-### Constant value change using Time (drifting)
+<figure><img src="../../.gitbook/assets/GB_Transform_Drift.gif" alt=""><figcaption></figcaption></figure>
+
+### **Constant Value Drift and Motion**
+
+#### 1. Linear Value Drift
 
 ```javascript
-time*50;
+value + time * 50;
+```
 
-// for adding to an alement in an array such as position:
-value + [time*50,0]
+#### 2. Apply Value Drift to Array Element eg. Position
 
-// for value change to start at inPoint
-(time-inPoint)*50
+```javascript
+value + [time * 50, 0];
+```
 
-// Throw (move at a constant speed without keyframes)
-veloc = -10; //horizontal velocity (pixels per second)
-x = position[0] + (time - inPoint) *veloc;
+#### **3. Offset Value Change**
+
+```javascript
+value + (time - inPoint) * 50;
+```
+
+**4. Constant Horizontal Motion ("Throw")**
+
+```javascript
+x = position[0] + (time - inPoint) * (-10);
 y = position[1];
-[x,y]
- 
+[x, y]
 ```
 
 ### Align to X-axis or Y-axis
 
-{% tabs %}
-{% tab title="basic" %}
-```javascript
-var dst = 50;
-var x= thisComp.layer(index-1).transform.position[0]+dst;
-value + [x,0];
-```
-{% endtab %}
+### X-Axis
 
-{% tab title="if X or Y" %}
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>This expression references the X position of the layer above in the Composition panel and adds a fixed increment, resulting in a row of evenly spaced child layers.</p></figcaption></figure>
+
 ```javascript
-var xy = 0;
-var dst = 50;
-var x= thisComp.layer(index-1).transform.position[0]+dst;
-var x= thisComp.layer(index-1).transform.position[0]+dst
-xy==0? value+[x,0]: value+[0,y]; // Ternary conditional operator
+var xOffset = 350;
+var prevLayerX = thisComp.layer(index - 1).transform.position[0];
+[xOffset + prevLayerX, value[1]];
+
 ```
-{% endtab %}
-{% endtabs %}
+
+### Y-Axis&#x20;
+
+```javascript
+var yOffset = 350;
+var prevLayerY = thisComp.layer(index - 1).transform.position[1];
+[value[0], yOffset + prevLayerY];
+
+```
 
 ### Changing anchor point
 
@@ -85,24 +96,51 @@ var s = sourceRectAtTime();
 
 ### Random positioning XYZ
 
-![](<../../.gitbook/assets/ random\_position.gif>)
+![A series of duplicated layers with random position values](<../../.gitbook/assets/ random\_position.gif>)
 
 ```javascript
-seed = 20;
-min = [25,25,-1900]; // Connect to 3D Point Control for control
-max = [thisComp.width,thisComp.height,50]
+// Seed for randomization
+var seed = 20;
 
-seedRandom(seed,true);
+// Define the minimum values for randomization
+var minX = 25;
+var minY = 25;
+var minZ = -1900; 
 
-random(min,max);
+// Define the maximum values for randomization
+var maxX = thisComp.width;
+var maxY = thisComp.height;
+var maxZ = 50;
 
-// This is same as this
+// Set the random seed
+seedRandom(seed, true);
 
-// x= random(min[0],max[0]);
-// y= random(min[1],max[1]);
-// z= random(min[2],max[2]);
+// Generate random values within the defined ranges
+var randomX = random(minX, maxX);
+var randomY = random(minY, maxY);
+var randomZ = random(minZ, maxZ);
 
-//[x,y,z]
+// Create an array with the random values
+[randomX, randomY, randomZ];
+
+```
+
+Alternatively, you can use array variables for a preferred and shorter expression.
+
+```javascript
+// Seed for randomization
+var seed = 20;
+
+// Define the minimum and maximum values for randomization
+var minValues = [25, 25, -1900]; 
+var maxValues = [thisComp.width, thisComp.height, 50];
+
+// Set the random seed
+seedRandom(seed, true);
+
+// Create an array with the random values
+random(minValues,maxValues)
+
 ```
 
 ## Scale
@@ -110,14 +148,16 @@ random(min,max);
 ### Maintain Scale When Parented&#x20;
 
 {% tabs %}
-{% tab title="both axis" %}
+{% tab title="Both" %}
 ```javascript
-s = [];
-ps = parent.transform.scale.value;
-for (i = 0; i < ps.length; i++){
-s[i] = value[i]*100/ps[i];
+var scaleFactor = [];
+var parentScale = parent.transform.scale.value;
+
+for (var i = 0; i < parentScale.length; i++) {
+    scaleFactor[i] = (value[i] * 100) / parentScale[i];
 }
-s
+
+scaleFactor;
 ```
 {% endtab %}
 
@@ -131,6 +171,10 @@ arr*ratio;
 ```
 {% endtab %}
 {% endtabs %}
+
+**Implementation**
+
+* [Scaling Radial Grid Expression · After Effects Tutorial · Master study: José Peña's "Creativity"](https://youtu.be/8BeI1qXzysU?t=122)
 
 ## Rotation
 
@@ -184,9 +228,7 @@ value+orient+180
 }catch(err){value}
 ```
 
-## Parent
-
-### Avoid inhering rotation
+### Ignore Parent Rotation
 
 ```javascript
 value – parent.transform.rotation
@@ -389,8 +431,10 @@ linear(d, startFade, endFade, 100, 0)
 
 ### Transparent backside of 3D layer
 
+<figure><img src="../../.gitbook/assets/GB_Transform_Opacity_CompVec.gif" alt=""><figcaption></figcaption></figure>
+
 ```javascript
-if (toCompVec([0, 0, 1])[2] > 0 ) value else 0
+if (toCompVec([0, 0, 1])[2] > 0 ) value; else 0;
 ```
 
 ## Colour
@@ -409,8 +453,9 @@ b = c & 0xff;
 ### Random fill
 
 ```javascript
-// Apply on fill
-seedRandom(index,true); // change true to 0 for constant change
+// Apply on Color Controls
+seed = 20;
+seedRandom(seed,true); // change true to 0 for constant change
 random([0,0,0,1],[1,1,1,1])
 ```
 
@@ -791,4 +836,6 @@ target.opacity.valueAtTime(time - delay)
 {% endtab %}
 {% endtabs %}
 
-##
+## Changelog
+
+* 2023.09.16: Added GIFs for snippet and rewrote expressions for clarity

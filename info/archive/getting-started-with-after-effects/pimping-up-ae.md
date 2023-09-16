@@ -68,7 +68,7 @@ After Effects Folder Structures
 
 Under Preferences > New Project  > Choose Project Template > Select AEP to use for startup
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (1).png>)
 
 ## After Effects Output Modules (AOM)
 
@@ -99,7 +99,7 @@ Have a item in the render queue > `Output Module` > `Make Template` > `Load` > S
 
 ![](<../../../.gitbook/assets/image (15).png>)
 
-{% file src="../../../.gitbook/assets/cm_2020_11_ddu (2).aom" %}
+{% file src="../../../.gitbook/assets/cm_2020_11_ddu (1) (2).aom" %}
 NSC After Effects Output Modules
 {% endfile %}
 
