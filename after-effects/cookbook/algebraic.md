@@ -8,8 +8,6 @@ description: 'Last update: 8 June 2021'
 
 ### createPath
 
-{% tabs %}
-{% tab title="square" %}
 ```javascript
 vertices = [[0,0], [100,0], [100,100], [0,100]];
 inTangents=[]
@@ -17,8 +15,8 @@ outTangents=[]
 closed = true;
 createPath(vertices,inTangents, outTangents, closed);
 ```
-{% endtab %}
-{% endtabs %}
+
+
 
 ## Triangle
 
