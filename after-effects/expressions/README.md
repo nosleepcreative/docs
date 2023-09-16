@@ -835,7 +835,3 @@ target.opacity.valueAtTime(time - delay)
 ```
 {% endtab %}
 {% endtabs %}
-
-## Changelog
-
-* 2023.09.16: Added GIFs for snippet and rewrote expressions for clarity
