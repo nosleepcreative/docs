@@ -14,7 +14,7 @@
 
 
 
-![Using Skin node to skip connect n-primitives](<../../../../.gitbook/assets/image (4).png>)
+![Using Skin node to skip connect n-primitives](<../../../../.gitbook/assets/image (5).png>)
 
 ## HUD
 

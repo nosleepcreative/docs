@@ -42,7 +42,7 @@ y = position[1];
 
 ### X-Axis
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>This expression references the X position of the layer above in the Composition panel and adds a fixed increment, resulting in a row of evenly spaced child layers.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>This expression references the X position of the layer above in the Composition panel and adds a fixed increment, resulting in a row of evenly spaced child layers.</p></figcaption></figure>
 
 ```javascript
 var xOffset = 350;

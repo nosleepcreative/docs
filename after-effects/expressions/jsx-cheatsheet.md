@@ -1,6 +1,8 @@
 # JSX Cheatsheet
 
-If you're just starting to learn JSX and expressions in React, it can be overwhelming to remember all the syntax and concepts involved. That's why I've created this JSX cheatsheet as a quick reference guide to help you when you get stuck.
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+If you're just starting to learn JSX and expressions for After Effects, it can be overwhelming to remember all the syntax and concepts involved. That's why I've created this JSX cheatsheet as a quick reference guide to help you when you get stuck.
 
 ## Declaration
 
@@ -32,7 +34,7 @@ Strings are used to represent text in JavaScript.
 
 For-loops are used to iterate over a block of code multiple times.
 
-```
+```javascript
 for (var i = 0; i < value; i++) {
   statement
 }
@@ -42,7 +44,7 @@ for (var i = 0; i < value; i++) {
 
 If/else statements are used to execute different blocks of code depending on whether a condition is true or false.
 
-```
+```javascript
 if (fruit) {
   statement
 } else {
@@ -54,7 +56,7 @@ if (fruit) {
 
 The shorthand if statement is used when you want to return a value based on a condition.
 
-```
+```javascript
 if (x == 1) 10;
 ```
 
@@ -62,15 +64,15 @@ if (x == 1) 10;
 
 Ternary operations are a shorthand way to write if/else statements and return a value based on a condition.
 
-```
-x = (y >= 5) ? 20  50;
+```javascript
+x = (y >= 5) ? 20 : 50;
 ```
 
 ## Object
 
 Objects in JavaScript are used to store collections of key/value pairs.
 
-```
+```javascript
 var x = { firstName "John", lastName "Doe" };
 ```
 
@@ -78,7 +80,7 @@ var x = { firstName "John", lastName "Doe" };
 
 Single line comments are used to add comments to your code that will not be executed.
 
-```
+```java
 // This is a single line comment
 ```
 
@@ -86,7 +88,7 @@ Single line comments are used to add comments to your code that will not be exec
 
 Multi-line comments are used to add comments to your code that span multiple lines.
 
-```
+```javascript
 /* This is a 
 multi-line comment 
 that spans multiple lines */
@@ -96,7 +98,7 @@ that spans multiple lines */
 
 Regular expressions are patterns used to match character combinations in strings.
 
-```
+```javascript
 "\n"
 ```
 
