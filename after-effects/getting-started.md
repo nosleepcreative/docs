@@ -40,14 +40,18 @@ description: 'Last update: 16 May 2021'
 
 ## NoSleepCreative Expression Starter Pack
 
+* [JSX Cheatsheet](expressions/jsx-cheatsheet.md)
 * [Basic Expression Workshop](https://youtu.be/aZ5F1eCm428), NoSleepCreative&#x20;
 * [Expression snippet library](expressions/)
+* &#x20;["Advanced After Effects: Coding for Motion Design" Domestika Course](https://www.domestika.org/en/courses/3818-advanced-after-effects-coding-for-motion-design)
 
 ## FAQs
 
+<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+
 ### How do I get started with expressions > Why do you want to learn expressions?
 
-* the best way to learn expressions is to use them consistently with your projects. I hope you like math hahaha; it helps. Personally, I think that coding has an affinity with people who like math and organization
+* The best way to learn expressions is to use them consistently with your projects. I hope you like math hahaha; it helps. Personally, I think that coding has an affinity with people who like math and organization
 * Here is my recommended learning path:&#x20;
   1. Watch my [Expression workshop video](https://youtu.be/aZ5F1eCm428) for a quick overview
   2. Watch Animoplex tutorials — get comfortable with variables, arrays, conditional,&#x20;
@@ -82,11 +86,19 @@ Not really, I would say there is the School of Motion's Expression course but I 
 
 #### Play
 
-Personally, I really enjoyed Mathematics, it was my strongest and favorite subject in school. I love solving riddle and discovering patterns and that is how I see expressions: They are just are fun riddles. Usually I would get an idea about an expression to animate or design something, and **I would spend lots of time and effort figuring it out even if I was not going to use for any current projects.**  Sometimes, I am unable to sleep because i'm thinking of coding ideas. Hence, fun is an element when it comes to learning!
+Personally, I really enjoyed Mathematics, it was my strongest and favorite subject in school. I love solving riddle and discovering patterns and that is how I see expressions: They are just are fun riddles. Usually I would get an idea about an expression to animate or design something, and **I would spend lots of time and effort figuring it out even if I was not going to use for any current projects.** Sometimes, I am unable to sleep because i'm thinking of coding ideas. Hence, fun is an element when it comes to learning!
+
+<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 #### Make your expression library
 
-There are just way too many expressions to write or remember, that is why I have this wiki site to house everything. I recommend anyone who want to get good at expression to start their own wiki page and curate your own code snippets you found or wrote yourself. You can use Gitbook like me or Google Sheets like JR Canesto.
+There are just way too many expressions to write or remember, that is why I have this wiki site to house everything. I recommend anyone who want to get good at expression to start their own wiki page and curate your own code snippets you found or wrote yourself. You can use Gitbook like me or Google Sheets like JR Canesto/Ordinary Folk.
+
+<div align="left">
+
+<figure><img src="../.gitbook/assets/ShiaLabeouf_2.gif" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 #### **Just do it**
 

@@ -40,6 +40,17 @@ for (var i = 0; i < value; i++) {
 }
 ```
 
+## While Loops
+
+While-loops are used to iterate over a block of code as long as a particular condition remains true.
+
+```javascript
+while (i < 20) {
+  // statement
+  i++
+}
+```
+
 ## If/Else Statements&#x20;
 
 If/else statements are used to execute different blocks of code depending on whether a condition is true or false.
@@ -113,10 +124,16 @@ that spans multiple lines */
 Regular expressions are patterns used to match character combinations in strings.
 
 ```javascript
-"\n"
+"\n" // Line break
 ```
 
 ## Additional Readings
 
+**JavaScript**
+
 * [https://gitbook.gitbook.io/learn-javascript/](https://gitbook.gitbook.io/learn-javascript/)
 * [https://learnjavascript.online/app.html?id=1437](https://learnjavascript.online/app.html?id=1437)
+
+**Regex**
+
+* [https://regexone.com](https://regexone.com)
