@@ -36,13 +36,14 @@
   * [Terminology](nexrender/terminology.md)
   * [Project Files Preparation](nexrender/project-files-preparation.md)
 
-## Python
+## Cinema 4D
 
-* [Python](python/python/README.md)
-  * [For Artists](python/python/for-artists.md)
-  * [Maya Environment](python/python/maya.md)
-  * [Maya snippets](python/python/maya-snippets.md)
-  * [VSFX 705](python/python/vsfx-705.md)
+* [Python Cheat Sheet](cinema-4d/python/README.md)
+  * [For Artists](cinema-4d/python/for-artists.md)
+  * [Maya Environment](cinema-4d/python/maya.md)
+  * [Maya snippets](cinema-4d/python/maya-snippets.md)
+  * [VSFX 705](cinema-4d/python/vsfx-705.md)
+* [Cookbook](cinema-4d/cookbook.md)
 
 ## Info
 
