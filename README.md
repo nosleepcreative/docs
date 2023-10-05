@@ -16,6 +16,7 @@ This wiki project started in 2015. After experimenting with platforms like WordP
 
 ## Changelog
 
+* **2023.10.04:** Created Cinema 4D>Cookbook, added Python terms table to Cheat Sheet
 * **2023.10.01:** Added profile photo, while loop to JSX Cheatsheet
 * **2023.09.16:** Added GIFs for snippet and rewrote expressions for clarity, added change log, clean up Welcome page
 * **2020.10.12:** Some of my content here are disappearing as I am migrating them into my private Notion database for easier curation. Not to worry, everything related to Motion Design will remain here.
