@@ -172,9 +172,13 @@ result; // Output the generated string
 {% endtab %}
 {% endtabs %}
 
-##
+### Search and replacing string instances
 
-##
+```javascript
+var searchString = /\r/g; // \r: lien break; \g: global flag
+var replaceString = "newString";
+value.replace(searchString, replaceString);
+```
 
 ## Parsing text
 
