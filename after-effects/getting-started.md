@@ -1,8 +1,12 @@
 ---
-description: 'Last update: 16 May 2021'
+description: 'Last update: 19 January 2024'
 ---
 
 # Getting Started with Expressions
+
+## Introduction
+
+Welcome to my comprehensive guide on JavaScript and After Effects Expressions! This page is designed to be your one-stop resource for learning, enhancing, and mastering the art of JavaScript, particularly in the context of Adobe After Effects.&#x20;
 
 ## Reference Library
 
@@ -49,14 +53,16 @@ description: 'Last update: 16 May 2021'
 
 <figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-### How do I get started with expressions > Why do you want to learn expressions?
+### How do I get started with coding and expressions?
 
-* The best way to learn expressions is to use them consistently with your projects. I hope you like math hahaha; it helps. Personally, I think that coding has an affinity with people who like math and organization
-* Here is my recommended learning path:&#x20;
-  1. Watch my [Expression workshop video](https://youtu.be/aZ5F1eCm428) for a quick overview
-  2. Watch Animoplex tutorials — get comfortable with variables, arrays, conditional,&#x20;
-  3. Write your own functions
-  4. Make your functions or algorithm with cleaner and minimal code such as using array methods (map, reduce, filter,etc.) and[ arrow function](https://www.w3schools.com/js/js\_arrow\_function.asp).
+The key to mastering coding expressions lies in consistent practice within your projects. A fondness for math can be a significant advantage, as coding often resonates with those who enjoy mathematical concepts and organized thinking.&#x20;
+
+To kickstart your journey, here's a structured learning path I recommend:
+
+1. **Start with my** [**Expression workshop video**](https://youtu.be/aZ5F1eCm428)**: T**his will give you a quick introduction to the basics of expressions.
+2. **Dive into** [**Animoplex tutorials**](https://www.youtube.com/c/Animoplex/playlists)**:** Progress to learning how to implement expressions into your animations in various ways.
+3. **Practice Writing Your Functions:** Challenge yourself by writing your own functions/code solutions, applying the concepts you've learned.
+4. **Refine Your Code**: Aim to write cleaner, more efficient code. Practice using advanced array methods like map, reduce, and filter, and familiarize yourself with arrow functions for more concise code.
 
 ### Do I need to know Javascript before I get into expressions?
 
@@ -74,9 +80,15 @@ Absolutely NO. You do not have to be good, you just need to know the important o
 
 ### Are there any paid training courses you recommend?
 
-Not really, I would say there is the School of Motion's Expression course but I never taken it before. I actually got better at expressions when I was learning [scripting](https://www.fxphd.com/details/196/) instead.  Maybe you can give that a try.&#x20;
+I do recommend my "[Advanced After Effects: Coding for Motion Design](https://www.domestika.org/en/courses/3818-advanced-after-effects-coding-for-motion-design/thedesmonddu)" course on Domestika. It offers specialized training in coding within After Effects, tailored for those keen on mastering advanced motion design techniques.
+
+An alternative course to consider is the School of Motion's Expression course, although I haven't personally taken it. Notably, my improvement in expressions largely came from a scripting course from FXPHD.
 
 ### Best way to learn expressions
+
+#### Play
+
+Personally, I really enjoyed Mathematics, it was my strongest and favorite subject in school. I love solving riddle and discovering patterns and that is how I see expressions: They are just are fun riddles. Usually I would get an idea about an expression to animate or design something, and **I would spend lots of time and effort figuring it out even if I was not going to use for any current projects.** Sometimes, I am unable to sleep because i'm thinking of coding ideas. Hence, fun is an element when it comes to learning!
 
 <div align="left">
 
@@ -84,25 +96,21 @@ Not really, I would say there is the School of Motion's Expression course but I 
 
 </div>
 
-#### Play
-
-Personally, I really enjoyed Mathematics, it was my strongest and favorite subject in school. I love solving riddle and discovering patterns and that is how I see expressions: They are just are fun riddles. Usually I would get an idea about an expression to animate or design something, and **I would spend lots of time and effort figuring it out even if I was not going to use for any current projects.** Sometimes, I am unable to sleep because i'm thinking of coding ideas. Hence, fun is an element when it comes to learning!
-
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
-
 #### Make your expression library
 
 There are just way too many expressions to write or remember, that is why I have this wiki site to house everything. I recommend anyone who want to get good at expression to start their own wiki page and curate your own code snippets you found or wrote yourself. You can use Gitbook like me or Google Sheets like JR Canesto/Ordinary Folk.
+
+<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+
+#### **Just do it**
+
+When I first started, I would type out expressions from tutorial and avoid copying and pasting. Even if I do not understand what I am typing, I am building the coding ability into my subconscious.&#x20;
 
 <div align="left">
 
 <figure><img src="../.gitbook/assets/ShiaLabeouf_2.gif" alt=""><figcaption></figcaption></figure>
 
 </div>
-
-#### **Just do it**
-
-When I first started, I would type out expressions from tutorial and avoid copying and pasting. Even if I do not understand what I am typing, I am building the coding ability into my subconscious.&#x20;
 
 ## Tips
 
@@ -111,3 +119,7 @@ When I first started, I would type out expressions from tutorial and avoid copyi
 I sensed that people think that writing long lines of complex expression code will yield amazing animation and design. In truth, that is not the case. The adage "Less is More" still applies when it comes to programming and coding. What we should aim for instead when writing expressions  (or anything actually) is **Profound Simplicity (James Clear) or Informed Simplicity (architect Matthew Frederick) .**&#x20;
 
 **Basically, Everything should be made as simple as possible, but no simpler (Albert Einstein).** &#x20;
+
+### **Focus on problem solving, not improving at writing expressions**
+
+{% embed url="https://youtu.be/QMbx0dTWJIQ?list=PLpdAX8PTk5ao41zZpFEs1DOl_JQCPqLJf" %}
