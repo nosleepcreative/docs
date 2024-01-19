@@ -30,7 +30,7 @@ value + [time * 50, 0];
 value + (time - inPoint) * 50;
 ```
 
-**4. Constant Horizontal Motion ("Throw")**
+**4. Constant Horizontal Motion**&#x20;
 
 ```javascript
 x = position[0] + (time - inPoint) * (-10);
