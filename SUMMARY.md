@@ -38,6 +38,7 @@
 
 ## Cinema 4D
 
+* [Formulas](cinema-4d/formulas.md)
 * [Python Cheat Sheet](python/python/README.md)
   * [For Artists](python/python/for-artists.md)
   * [Maya Environment](python/python/maya.md)

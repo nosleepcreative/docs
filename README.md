@@ -16,6 +16,7 @@ This wiki project started in 2015. After experimenting with platforms like WordP
 
 ## Changelog
 
+* **2024.02.21:** Added new page Formulas to Cinema 4D Section
 * **2023.10.04:** Created Cinema 4D>Cookbook, added Python terms table to Cheat Sheet
 * **2023.10.01:** Added profile photo, while loop to JSX Cheatsheet
 * **2023.09.16:** Added GIFs for snippet and rewrote expressions for clarity, added change log, clean up Welcome page
