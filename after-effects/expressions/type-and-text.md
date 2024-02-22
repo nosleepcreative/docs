@@ -1,48 +1,14 @@
 # Type & Text
 
-## Recommended readings
+## Introduction
 
-* [ WorkBench 34: Expression Selector Intro](https://www.youtube.com/watch?v=FcSX2Heirko)
-
-## Basics
-
-```javascript
-// getting the character count
-l = thisComp.layer("your text layer").text.sourceText.length;
-
-// getting word count 
-l = thisComp.layer("your text layer").text.sourceText;
-wordsCount = l.split(/ ,| | \./).length;
+A library of After Effects expressions to be used for sourceText property of a Text Layer.
 
 
-// Matching text with regex
-thisComp.layer("text").text.sourceText.toLowerCase().match(/\w+\./))
 
-// includes() — determines whether a string contains the characters of a specified strin
-var str = "Hello world, welcome to the universe.";
-var n = str.includes("world");
-```
+## Repetition
 
-## Utility Functions
-
-### Find Number of Layers that includes string
-
-```javascript
-function findLayerbyName(str) {
-    var n = thisComp.numLayers;
-    var numMattes = 0;
-    for (i = 1; i <= n; i++) {
-        thisComp.layer(i).name.includes(str) == 1 ? numMattes += 1 : 0;
-    }
-    return numMattes
-}
-
-findLayerbyName("matte")
-```
-
-## SourceText&#x20;
-
-### Repeater
+### Repeat value
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,10 +39,31 @@ s;
 {% endtab %}
 {% endtabs %}
 
-### Repeater - Grid
+### Text Grid - Uniform Repetition
 
 <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
+{% tabs %}
+{% tab title="repeat()" %}
+**Explicit**
+
+```javascript
+var s = value;  // Source text
+var numColumns = 5;  // Number of columns
+var numRows = 10;  // Number of rows
+
+var row = s.repeat(numColumns) + "\r";  
+row.repeat(numRows);
+```
+
+**Concise**
+
+```javascript
+(value.repeat(5) + "\r").repeat(10);
+```
+{% endtab %}
+
+{% tab title="For-loop " %}
 ```javascript
 // User Input:
 var numRows = 10; // Number of rows in the output
@@ -96,10 +83,14 @@ while (j < numRows) {
   j += 1;
 }
 
-result;
+result
 ```
+{% endtab %}
+{% endtabs %}
 
-### Random Characters
+## Randomization
+
+### Random Letter
 
 <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
@@ -168,6 +159,68 @@ while (j < numRows) {
 
 result; // Output the generated string
 
+```
+{% endtab %}
+{% endtabs %}
+
+### Random Letter 2
+
+```javascript
+function genLetter() {
+    r = random(65, 90); //from a to z
+    return String.fromCharCode(r);
+}
+
+function randAlphabet(maxNum, col, seed) {
+    seedRandom(seed, true);
+    var s = "";
+    for (i = 1; i <= maxNum; i++) {
+        s += genLetter() + ' ';
+        if (i % col == 0) s += '\n'; // add line break
+    }
+    return s
+}
+randAlphabet(500, 25, 1)
+```
+
+### Random Digit (0-9)
+
+```javascript
+seedRandom(10,true);
+Math.round(random(9))
+```
+
+### Random Binary&#x20;
+
+![](../../.gitbook/assets/binaryGenerate.jpg)
+
+{% tabs %}
+{% tab title="1" %}
+```javascript
+function binary(maxNum, col, seed) {
+    seedRandom(seed, true);
+    var s = "";
+    for (i = 1; i <= maxNum; i++) {
+        s += Math.round(random()) + ' ';
+        if (i % col == 0) s += '\n'; // add line break
+    }
+    return s
+}
+
+binary(500, 25, 1)
+```
+{% endtab %}
+
+{% tab title="2" %}
+```javascript
+n = 300; // connect to slider
+seedRandom(seed,true);
+let m = b = '';
+for(i=0;i<n;i++){
+	seedRandom(i+seed,true);
+	b = Math.round(random(1)).toString()
+	m +=b;
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -294,62 +347,7 @@ for (var i = 1; i <= maxNum; i++) {
 }
 ```
 
-### Binary&#x20;
 
-![](../../.gitbook/assets/binaryGenerate.jpg)
-
-{% tabs %}
-{% tab title="1" %}
-```javascript
-function binary(maxNum, col, seed) {
-    seedRandom(seed, true);
-    var s = "";
-    for (i = 1; i <= maxNum; i++) {
-        s += Math.round(random()) + ' ';
-        if (i % col == 0) s += '\n'; // add line break
-    }
-    return s
-}
-
-binary(500, 25, 1)
-```
-{% endtab %}
-
-{% tab title="2" %}
-```javascript
-n = 300; // connect to slider
-seedRandom(seed,true);
-let m = b = '';
-for(i=0;i<n;i++){
-	seedRandom(i+seed,true);
-	b = Math.round(random(1)).toString()
-	m +=b;
-}
-```
-{% endtab %}
-{% endtabs %}
-
-## Letters
-
-### Random Alphabet
-
-```javascript
-function genLetter() {
-    r = random(65, 90); //from a to z
-    return String.fromCharCode(r);
-}
-
-function randAlphabet(maxNum, col, seed) {
-    seedRandom(seed, true);
-    var s = "";
-    for (i = 1; i <= maxNum; i++) {
-        s += genLetter() + ' ';
-        if (i % col == 0) s += '\n'; // add line break
-    }
-    return s
-}
-randAlphabet(500, 25, 1)
-```
 
 ## Dates
 
@@ -370,6 +368,10 @@ D = new Date(Date(0)); D.getDate()
 ```
 
 ## Expressions selector
+
+**Recommended readings**
+
+* [ WorkBench 34: Expression Selector Intro](https://www.youtube.com/watch?v=FcSX2Heirko)
 
 ### Default
 
@@ -424,6 +426,46 @@ function inArray(obj) {
 freq = .5;
 selectorValue*Math.sin(time*freq*Math.PI*2 + Math.PI*2* textIndex/textTotal)
 ```
+
+## Basics
+
+```javascript
+// getting the character count
+l = thisComp.layer("your text layer").text.sourceText.length;
+
+// getting word count 
+l = thisComp.layer("your text layer").text.sourceText;
+wordsCount = l.split(/ ,| | \./).length;
+
+
+// Matching text with regex
+thisComp.layer("text").text.sourceText.toLowerCase().match(/\w+\./))
+
+// includes() — determines whether a string contains the characters of a specified strin
+var str = "Hello world, welcome to the universe.";
+var n = str.includes("world");
+```
+
+## Utility Functions
+
+### Find Number of Layers that includes string
+
+```javascript
+function findLayerbyName(str) {
+    var n = thisComp.numLayers;
+    var numMattes = 0;
+    for (i = 1; i <= n; i++) {
+        thisComp.layer(i).name.includes(str) == 1 ? numMattes += 1 : 0;
+    }
+    return numMattes
+}
+
+findLayerbyName("matte")
+```
+
+##
+
+##
 
 ## Expression Selector (Regex)
 
