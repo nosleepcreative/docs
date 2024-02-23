@@ -56,7 +56,7 @@ while (i < 20) {
 If/else statements are used to execute different blocks of code depending on whether a condition is true or false.
 
 ```javascript
-if (fruit) {
+if (x==20) {
   statement
 } else {
   statement
