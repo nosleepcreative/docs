@@ -8,7 +8,7 @@ A library of After Effects expressions to be used for sourceText property of a T
 
 ## Repetition
 
-### Repeat value
+### Repeat input string
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
@@ -88,6 +88,146 @@ result
 {% endtab %}
 {% endtabs %}
 
+### Text Grid - Multiple Line Repetition
+
+This code splits a comma-separated string into an array, then formats it into a text block with rows and columns by repeating each item with added prefixes and suffixes.
+
+{% tabs %}
+{% tab title="For Loop" %}
+```javascript
+const str = value;
+const strArr = str.split(",");
+const prefix = ""; 
+const suffix = " ";
+const numColumns = 5;
+const numRows = 10;
+
+let result = "";
+
+for (let i = 0; i < numRows; i++) {
+    const eleIndex = i % strArr.length;
+    result += (`${prefix}${strArr[eleIndex]}${suffix}`).repeat(numColumns).trimEnd() + "\r";
+}
+
+result;
+```
+{% endtab %}
+
+{% tab title="repeat()" %}
+```javascript
+s = value;
+strArr = s.split(",");
+prefix =" ";
+suffix =" ";
+
+numColumns = 5; 
+numRows = 10; 
+
+row1 = (prefix + strArr[0] + suffix).repeat(numColumns) + "\r";  
+row2 = (prefix + strArr[1] + suffix).repeat(numColumns) + "\r";  
+row3 = (prefix + strArr[2] + suffix).repeat(numColumns) + "\r";  
+
+rows = row1 + row2 + row3;
+rows.repeat(numRows);
+```
+{% endtab %}
+{% endtabs %}
+
+### Text Grid - Number Sequence
+
+This code creates a string of sequential numbers between a start and end range. The numbers are arranged in rows and columns, and each number can have leading zeros and spaces after it.&#x20;
+
+```javascript
+//user variables
+var startNum = 0;
+var maxNum = 200;
+var numCol = 10;
+var numZero = 2;
+var numSpace = 1;
+
+var s = "";
+
+
+for (var i = 1; i <= maxNum; i++) {
+    // add startNum 
+    var n = startNum + i - 1;
+
+    // add zeroes
+    for (var j = 1; j <= numZero; j++) {
+        if (n < Math.pow(10, j)) s += 0
+    }
+    // add number to string
+    s += n;
+
+    // add spaces 
+    for (var j = 0; j < numSpace; j++) s += ' '
+
+    // add line break 
+    i % numCol == 0 ? s += '\n' : s
+
+}
+```
+
+### Text Grid - Random Letter
+
+This function generates a grid of random letters, and the user specify the total number of letters and letters per row.
+
+```javascript
+function genLetter() {
+    r = random(65, 90); //from a to z
+    return String.fromCharCode(r);
+}
+
+function randAlphabet(maxNum, col, seed) {
+    seedRandom(seed, true);
+    var s = "";
+    for (i = 1; i <= maxNum; i++) {
+        s += genLetter() + ' ';
+        if (i % col == 0) s += '\n'; // add line break
+    }
+    return s
+}
+randAlphabet(500, 25, 1)
+```
+
+### Text Grid - Random Binary&#x20;
+
+![](../../.gitbook/assets/binaryGenerate.jpg)
+
+{% tabs %}
+{% tab title="1" %}
+```javascript
+function binary(maxNum, col, seed) {
+    seedRandom(seed, true);
+    var s = "";
+    for (var i = 1; i <= maxNum; i++) { 
+        s += Math.round(random()) + ' ';
+        if (i % col == 0) s += '\n'; 
+    }
+    return s;
+}
+
+// Usage
+binary(500, 25, 1);
+```
+{% endtab %}
+
+{% tab title="2" %}
+```javascript
+n = 300; // connect to slider
+seedRandom(seed,true);
+let m = b = '';
+for(i=0;i<n;i++){
+	seedRandom(i+seed,true);
+	b = Math.round(random(1)).toString()
+	m +=b;
+}
+```
+{% endtab %}
+{% endtabs %}
+
+***
+
 ## Randomization
 
 ### Random Letter
@@ -163,67 +303,16 @@ result; // Output the generated string
 {% endtab %}
 {% endtabs %}
 
-### Random Letter 2
-
-```javascript
-function genLetter() {
-    r = random(65, 90); //from a to z
-    return String.fromCharCode(r);
-}
-
-function randAlphabet(maxNum, col, seed) {
-    seedRandom(seed, true);
-    var s = "";
-    for (i = 1; i <= maxNum; i++) {
-        s += genLetter() + ' ';
-        if (i % col == 0) s += '\n'; // add line break
-    }
-    return s
-}
-randAlphabet(500, 25, 1)
-```
-
-### Random Digit (0-9)
+### Random Digit
 
 ```javascript
 seedRandom(10,true);
-Math.round(random(9))
+Math.round(random(9));
 ```
 
-### Random Binary&#x20;
+***
 
-![](../../.gitbook/assets/binaryGenerate.jpg)
-
-{% tabs %}
-{% tab title="1" %}
-```javascript
-function binary(maxNum, col, seed) {
-    seedRandom(seed, true);
-    var s = "";
-    for (i = 1; i <= maxNum; i++) {
-        s += Math.round(random()) + ' ';
-        if (i % col == 0) s += '\n'; // add line break
-    }
-    return s
-}
-
-binary(500, 25, 1)
-```
-{% endtab %}
-
-{% tab title="2" %}
-```javascript
-n = 300; // connect to slider
-seedRandom(seed,true);
-let m = b = '';
-for(i=0;i<n;i++){
-	seedRandom(i+seed,true);
-	b = Math.round(random(1)).toString()
-	m +=b;
-}
-```
-{% endtab %}
-{% endtabs %}
+## String Manipulation
 
 ### Search and replacing string instances
 
@@ -233,16 +322,16 @@ var replaceString = "newString";
 value.replace(searchString, replaceString);
 ```
 
-## Parsing text
+### Parsing Text
 
-### [Sourcetext from Comp Name](https://zacklovatt.com/split-sourcetext-from-comp-name)
+#### [Sourcetext from Comp Name](https://zacklovatt.com/split-sourcetext-from-comp-name)
 
 ```javascript
 // if comp name is "comp_05", to get number use this
 thisComp.name.split("_")[1] // replace delimiter based on your needs
 ```
 
-### Separating source text line feeds into an array
+#### Separating source text line feeds into an array
 
 ```javascript
 // Method 1 
@@ -255,7 +344,7 @@ myIndex = thisLayer.name;
 txt.split("\r")[myIndex];
 ```
 
-### [Number from comp name](https://www.w3schools.com/jsref/jsref\_parseint.asp)
+#### [Number from comp name](https://www.w3schools.com/jsref/jsref\_parseint.asp)
 
 ```javascript
 myNum = parseInt(thisComp.name.split(" ")[1],10);
@@ -314,39 +403,6 @@ endNun = 10000
 linear(time,startTime,endTime,startNum,endNum);
 ```
 
-### Sequence of number
-
-```javascript
-//user variables
-var startNum = 0;
-var maxNum = 200;
-var numCol = 10;
-var numZero = 2;
-var numSpace = 1;
-
-var s = "";
-
-
-for (var i = 1; i <= maxNum; i++) {
-    // add startNum 
-    var n = startNum + i - 1;
-
-    // add zeroes
-    for (var j = 1; j <= numZero; j++) {
-        if (n < Math.pow(10, j)) s += 0
-    }
-    // add number to string
-    s += n;
-
-    // add spaces 
-    for (var j = 0; j < numSpace; j++) s += ' '
-
-    // add line break 
-    i % numCol == 0 ? s += '\n' : s
-
-}
-```
-
 
 
 ## Dates
@@ -379,10 +435,10 @@ D = new Date(Date(0)); D.getDate()
 selectorValue * textIndex/textTotal
 ```
 
-### %
+### Alternating Effector
 
 ```javascript
-if(textIndex%2) 0; else 100
+if(textIndex%2) -100; else 100
 ```
 
 ### [Random ](https://forums.creativecow.net/docs/forums/post.php?forumid=227\&postid=8595\&univpostid=8595\&pview=t)position from textIndex
