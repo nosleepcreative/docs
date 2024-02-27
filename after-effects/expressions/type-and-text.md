@@ -106,7 +106,7 @@ let result = "";
 
 for (let i = 0; i < numRows; i++) {
     const eleIndex = i % strArr.length;
-    result += (`${prefix}${strArr[eleIndex]}${suffix}`).repeat(numColumns).trimEnd() + "\r";
+    result += (prefix+strArr[eleIndex]+suffix).repeat(numColumns) + "\r"; 
 }
 
 result;
