@@ -30,12 +30,6 @@
   * [Master Properties](after-effects/scripting/master-properties.md)
 * [ScriptUI](after-effects/scriptui.md)
 
-***
-
-* [Nexrender](nexrender/README.md)
-  * [Terminology](nexrender/terminology.md)
-  * [Project Files Preparation](nexrender/project-files-preparation.md)
-
 ## Cinema 4D
 
 * [Formulas](cinema-4d/formulas.md)
@@ -69,7 +63,7 @@
   * [Woes](dev/archive/woes.md)
   * [How to get better](dev/archive/cbb/README.md)
     * [Portfolio / Showreel](dev/archive/cbb/showreel-rubric.md)
-    * [Design with cooking](dev/archive/cbb/design-with-cooking.md)
+    * [Design with cooking](dev/archive/pedagogy/design-with-cooking.md)
   * [Media theories](dev/archive/media-theories/README.md)
     * [Post Cinematic Affect](dev/archive/media-theories/post-cinematic-affect.md)
     * [Marxism, Reproduction and Aura](dev/archive/media-theories/marxism-reproduction-and-aura.md)
@@ -112,4 +106,7 @@
       * [Fluids - Pyro & Smoke](dev/archive/vex/houdini/fluids-pyro.md)
       * [Rendering](dev/archive/vex/houdini/mantra.md)
   * [REGEX](dev/archive/regex.md)
-* [Sandbox](dev/sandbox.md)
+* [Sandbox](dev/sandbox/README.md)
+  * [Nexrender](dev/sandbox/nexrender/README.md)
+    * [Terminology](dev/sandbox/nexrender/terminology.md)
+    * [Project Files Preparation](dev/sandbox/nexrender/project-files-preparation.md)

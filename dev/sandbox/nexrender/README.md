@@ -4,7 +4,7 @@ description: This page is incomplete
 
 # Nexrender
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Built with love using nodejs • Brought to you by <a href="https://github.com/inlife">@inlife</a> and other <a href="https://github.com/inlife/nexrender/graphs/contributors">contributors</a></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Built with love using nodejs • Brought to you by <a href="https://github.com/inlife">@inlife</a> and other <a href="https://github.com/inlife/nexrender/graphs/contributors">contributors</a></p></figcaption></figure>
 
 ## Abstract
 
@@ -42,7 +42,7 @@ Prior to setup your rendering cluster, you should familiarize yourself with send
 
 ## How to set up a nexrender cluster
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Web Server & Environment Setup
 
