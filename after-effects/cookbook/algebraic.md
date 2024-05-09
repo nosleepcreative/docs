@@ -16,7 +16,45 @@ closed = true;
 createPath(vertices,inTangents, outTangents, closed);
 ```
 
+## 8-Sided Rectangle (Beveled Rectangle)
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% tabs %}
+{% tab title="Expression" %}
+```javascript
+// Coordinates
+var v = [[1.5, 1.5], [2.0, 1.0], [2.0, -1.0], [1.5, -1.5], [-1.5, -1.5], [-2.0, -1.0], [-2.0, 1.0], [-1.5, 1.5]];
+
+// Create a path with zero tangents (straight lines)
+createPath(v, [], [], true);
+
+```
+{% endtab %}
+
+{% tab title="Mask" %}
+```javascript
+// Get the dimensions of the shape layer
+var w = thisLayer.width / 2;
+var h = thisLayer.height / 2;
+var cut = Math.min(w, h) * 0.2; // Adjust the corner cut size relative to layer size
+
+// Coordinates of the centered 8-sided rectangle based on layer dimensions
+var v = [
+    [w - cut, h], [w, h - cut], [w, -h + cut], [w - cut, -h],
+    [-w + cut, -h], [-w, -h + cut], [-w, h - cut], [-w + cut, h]
+];
+
+// Offset to center the path
+var offset = [thisLayer.width / 2, thisLayer.height / 2];
+v = v.map(function(point) { return [point[0] + offset[0], point[1] + offset[1]]; });
+
+// Create a path with zero tangents (straight lines)
+createPath(v, [], [], true);
+
+```
+{% endtab %}
+{% endtabs %}
 
 ## Triangle
 
