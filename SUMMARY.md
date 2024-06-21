@@ -46,6 +46,8 @@
 * [Portfolio](https://duitbetter.com/)
 * [Course](https://www.domestika.org/en/courses/3818-advanced-after-effects-coding-for-motion-design/thedesmonddu)
 * [YouTube](https://www.youtube.com/c/NoSleepCreative)
+* [Gumroad](https://nosleepcreative.gumroad.com/?recommended\_by=more\_like\_this)
+* [GitHub](https://www.github.com/nosleepcreative)
 
 ## Dev
 
