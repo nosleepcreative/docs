@@ -151,6 +151,16 @@ function indexInc(mainlayer, offset, randRange) {
 mainLayer.transform.position + [0+indexInc(mainLayer,50]
 ```
 
+## Checking selected layer
+
+### **Shape Layer**
+
+This snippet returns if the layer is a shape layer by checking if there is "Contents" property group.
+
+```javascript
+isShapeLayer = thisLayer.content == "Contents" ? 1 : 0;
+```
+
 ## Loops
 
 ### Through every frame

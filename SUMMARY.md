@@ -29,6 +29,8 @@
   * [Utilities](after-effects/scripting/utilities.md)
   * [Master Properties](after-effects/scripting/master-properties.md)
 * [ScriptUI](after-effects/scriptui.md)
+* [Tooling](after-effects/tooling.md)
+* [Toolkitting](after-effects/toolkitting.md)
 
 ## Cinema 4D
 
