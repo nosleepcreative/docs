@@ -570,7 +570,70 @@ if(choice ==0){
 	value +[0,stepy];}
 ```
 
-###
+## Carousel
+
+### 2D
+
+### 3D&#x20;
+
+![](<../../.gitbook/assets/carousel continuous.gif>)
+
+```javascript
+/*  There needs to be two layers named 'startCard' & 'endCard'
+    This allows rotation value to dynamically change when layers are inserted or removed.
+    All duplicates need to be placed within these two layers
+*/
+
+//anchor point
+radius = 500
+value+[0,0,radius]
+
+// Y rotation
+
+startIndex=thisComp.layer("startCard").index; 
+endIndex = thisComp.layer("endCard").index;
+numpt = startIndex-endIndex+1; // total number of layers
+myIndex = index-startIndex;
+angle = 360/numpt
+
+myIndex*angle+
+```
+
+#### Linking layers' rotation with opacity
+
+#### Using distance & vector position
+
+![](../../.gitbook/assets/carousel\_opacity.gif)
+
+```javascript
+// Make sure there is a camera 
+
+//Opacity
+startVal = 0;
+endVal = 100;
+fadeAngle = 180;
+
+v = toCompVec([0,0,1]); // layer position to comp position in Z
+d = length(toWorld(anchorPoint),thisComp.layer("Camera 1").toWorld([0,0,0]));
+c = v[2]/d;
+ease(c,Math.cos(degreesToRadians(fadeAngle)),1.0,startVal,endVal)
+
+```
+
+#### Using rotation
+
+{% code title="" %}
+```javascript
+angle = transform.yRotation%360;
+minAngle = 0;
+maxAngle = 360;
+mid = (maxAngle+minAngle)/2;
+if (angle < mid)
+  linear(angle,minAngle,mid,100,0)
+else
+  linear(angle,mid,maxAngle,0,100)
+```
+{% endcode %}
 
 ## Responsive Systems / Setups
 
@@ -607,67 +670,6 @@ maxDist= 960;
 
 ease(d,0,maxDist,100,0)
 ```
-
-### Carousel / Rotating layers&#x20;
-
-![](<../../.gitbook/assets/carousel continuous.gif>)
-
-```javascript
-/*  There needs to be two layers named 'startCard' & 'endCard'
-    This allows rotation value to dynamically change when layers are inserted or removed.
-    All duplicates need to be placed within these two layers
-*/
-
-//anchor point
-radius = 500
-value+[0,0,radius]
-
-// Y rotation
-
-startIndex=thisComp.layer("startCard").index; 
-endIndex = thisComp.layer("endCard").index;
-numpt = startIndex-endIndex+1; // total number of layers
-myIndex = index-startIndex;
-angle = 360/numpt
-
-myIndex*angle+
-```
-
-### Linking layers' rotation with opacity
-
-#### Using distance & vector position
-
-![](../../.gitbook/assets/carousel\_opacity.gif)
-
-```javascript
-// Make sure there is a camera 
-
-//Opacity
-startVal = 0;
-endVal = 100;
-fadeAngle = 180;
-
-v = toCompVec([0,0,1]); // layer position to comp position in Z
-d = length(toWorld(anchorPoint),thisComp.layer("Camera 1").toWorld([0,0,0]));
-c = v[2]/d;
-ease(c,Math.cos(degreesToRadians(fadeAngle)),1.0,startVal,endVal)
-
-```
-
-#### Using rotation
-
-{% code title="" %}
-```javascript
-angle = transform.yRotation%360;
-minAngle = 0;
-maxAngle = 360;
-mid = (maxAngle+minAngle)/2;
-if (angle < mid)
-  linear(angle,minAngle,mid,100,0)
-else
-  linear(angle,mid,maxAngle,0,100)
-```
-{% endcode %}
 
 ## Time Remapping / Playback ✅
 
