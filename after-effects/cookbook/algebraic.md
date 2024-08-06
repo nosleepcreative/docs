@@ -18,7 +18,7 @@ createPath(vertices,inTangents, outTangents, closed);
 
 ## 8-Sided Rectangle (Beveled Rectangle)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="Expression" %}
@@ -113,6 +113,38 @@ createPath(vertices,inTangents,outTangents,1);
 ```
 {% endtab %}
 {% endtabs %}
+
+## Lemniscate
+
+A Lemniscate is a mathematical curve shaped like the number 8 or the infinity symbol (∞). The term "lemniscate" comes from the Latin word "lemniscus," which means "ribbon."
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+```javascript
+function createLemniscatePath(center, radius, stretch, numPoints) {
+    var vertices = [];
+    
+    for (var i = 0; i <= numPoints; i++) {
+        var t = i / numPoints;
+        var angle = 2 * Math.PI * t;
+        var x = radius * Math.sin(angle) / (1 + Math.cos(angle) * Math.cos(angle));
+        var y = radius * Math.sin(angle) * Math.cos(angle) / (1 + Math.cos(angle) * Math.cos(angle));
+        vertices.push(center + [stretch * x, y]);
+    }
+    
+    return createPath(vertices, [], [], true);
+}
+
+// Parameters
+var center = [thisComp.width, thisComp.height] / 2;
+var radius = 300;
+var stretch = 1;
+var numPoints = 50;
+
+// Generate the Lemniscate path
+createLemniscatePath(center, radius, stretch, numPoints);
+
+```
 
 ## [Eight curve](https://mathworld.wolfram.com/EightCurve.html)
 
@@ -334,3 +366,8 @@ createPath(vertices, [], [], 0)
 {% endtab %}
 {% endtabs %}
 
+## Knots
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+[https://en.wikipedia.org/wiki/Knot\_%28mathematics%29](https://en.wikipedia.org/wiki/Knot\_\(mathematics\))

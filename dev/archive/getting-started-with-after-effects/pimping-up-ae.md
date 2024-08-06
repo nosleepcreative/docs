@@ -68,7 +68,7 @@ After Effects Folder Structures
 
 Under Preferences > New Project  > Choose Project Template > Select AEP to use for startup
 
-![](<../../../.gitbook/assets/image (2) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1).png>)
 
 ## After Effects Output Modules (AOM)
 

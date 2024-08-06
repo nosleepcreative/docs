@@ -1,6 +1,6 @@
 # JSX Cheatsheet
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you're just starting to learn JSX and expressions for After Effects, it can be overwhelming to remember all the syntax and concepts involved. That's why I've created this JSX cheatsheet as a quick reference guide to help you when you get stuck.
 
