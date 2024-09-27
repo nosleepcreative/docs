@@ -118,7 +118,7 @@ createPath(vertices,inTangents,outTangents,1);
 
 A Lemniscate is a mathematical curve shaped like the number 8 or the infinity symbol (∞). The term "lemniscate" comes from the Latin word "lemniscus," which means "ribbon."
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ```javascript
 function createLemniscatePath(center, radius, stretch, numPoints) {
@@ -368,6 +368,6 @@ createPath(vertices, [], [], 0)
 
 ## Knots
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 [https://en.wikipedia.org/wiki/Knot\_%28mathematics%29](https://en.wikipedia.org/wiki/Knot\_\(mathematics\))

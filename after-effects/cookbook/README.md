@@ -1,57 +1,16 @@
----
-description: Posted 2021, Updated on 10 Apr 2021
----
-
 # Cookbook
 
-## 🔴 Why is my expression not working?
-
 {% hint style="danger" %}
-Biggest culprit: You are using **ExtendScript for the Expression Engine,** when it is supposed to be Javascript.\
-\
-**Fix:** Go to File> Project Settings > Expressions > change to Javascript. ([This option is available on AE 2019 and later.](https://help.pixflow.net/portal/en/kb/articles/after-effect-change-expression-engin))&#x20;
+Encoutering expression errors? Check out this [Troubleshooting Guide!](https://app.gitbook.com/o/NW5KuSR8Tekqe0Wvv3JX/s/-Lgx0HTP5iKvQQwXUStq/\~/changes/1080/after-effects/expressions/expression-troubleshooting)
 {% endhint %}
 
-#### Other reasons
+## Introduction
 
-1. You made a **typo or used the wrong case** when writing the variable or function names
-2. You listed a **single value** into a parameters that takes an **array**&#x20;
-   * eg. myScale =5  will yield an error because the scale property is an array that takes 2 values.
-   * The fix is&#x20;
-     * myScale = \[5,5];&#x20;
-     * or myScale = 5; s = \[myScale, myScale]
-3. You forgot to put **semicolons** at the end of each line
-4. **You listed a variable as a string value**&#x20;
-   * This is a string: "mytext"
-   * This is a variable: var str  = "mytext";
-   * eg. in Apeel & Vucko tutorial, people alway list the variable as a string (**'myVariable'**) when it should be just **myVariable**;
-
-**When to ask for help?**
-
-If you tried everything above, and nothing still works. There are two things you can do:
-
-1. You can **download the project files** that I usually provide for free, and use my code I have there. As I am just a student, and do this on my own freewill. I do not have a lot of time and bandwidth to help people troubleshoot expressions. Hence, it's up to you to figure it on your own as much as possible.
-2. **If you have to ask me for help,** what I appreciate is having **more context and description** of your problem. For example:
-
-* Which lines does the error occurred?
-* What does the error(s) say?
-* What have you tried?&#x20;
-* Have you consulted this guide and tried the solutions I mentioned?
-* What AE version are you running, and what OS.
-
-**Sample format for requesting troubleshooting**
-
-_Hello, I having `problem` with `line number`. The error says `errorMessage` . I have tried `solution` but I still cannot fix the issue._&#x20;
-
-**What does not help me**
-
-1. Saying that "I wrote the code exactly" or I followed your tutorial. If you did, it would have worked. Clearly, the issue is something else and usually it's simply just a typo mistake.Hence, please give me more information about what the problem is so I can help you as quickly as possible.
-
-#### More readings
-
-* [How to troubleshoot expressions errors](https://www.youtube.com/watch?v=VdaGqq4I0qM\&t=1426s), Intro to Expression Rigs in After Effects, Zack Lovatt
+Below are code used in my [YouTube tutorials](https://www.youtube.com/@NoSleepCreative/videos) for your reference and usage. This page&#x20;
 
 ## Phyllotaxis
+
+{% embed url="https://www.youtube.com/watch?v=K1P9NgVJqLQ" %}
 
 ```javascript
 //theta
@@ -135,6 +94,8 @@ createPath(pts, [], [], 0)
 ```
 
 ## Scaling Radial Grid
+
+{% embed url="https://www.youtube.com/watch?v=8BeI1qXzysU" %}
 
 ### Parent/Child Link without scale inheritance
 
@@ -349,72 +310,10 @@ if (time > end - flickerDur){
   random(outPoint);
 }
 
-// original expression from Dan Ebbert
+// original expression from Dan EbbertyVelocity = 200; //pixels per second
 ```
 
-## Falling leaves \[[1](https://www.aenhancers.com/viewtopic.php?t=8)]\[[2](https://aenhancers.com/viewtopic.php?t=655)]
+## Change Log
 
-{% tabs %}
-{% tab title="1" %}
-```javascript
-//position
-yVelocity = 200; //pixels per second
-oscFreq = 1.5; //oscillations per second
-oscDepth = 35; //oscillation depth (pixels)
-drift = 25; // drift (wind?) (pixels per second: - = left, + = right)
-
-value + [oscDepth*Math.sin(oscFreq*Math.PI*2*time) + drift *time, yVelocity*time,0]
-
-//Z ROTATION:
-
-seedRandom(index,true);
-random(360);
-
-//Y ROTATION:
-oscFreq = 1.5;
-maxTilt = 15; //degrees
-
-maxTilt*Math.cos(oscFreq*Math.PI*2*time)
-```
-{% endtab %}
-
-{% tab title="2" %}
-```
-yVelocity = 200; //pixels per second
-oscFreq = 1.5; //oscillations per second
-oscDepth = 35; //oscillation depth (pixels)
-drift = 25; // drift (wind?) (pixels per second: - = left, + = right)
-floor=500; //position of floor from top
-
-X=value[0] + oscDepth*Math.sin(oscFreq*Math.PI*2*time) + drift *time;
-Y=easeIn(value[1]+yVelocity*time,value[1],floor)
-Z=0;
-
-[X,Y,Z]
-```
-{% endtab %}
-{% endtabs %}
-
-## Techniques
-
-### Radial arrangement
-
-* [**place along path** ](https://www.youtube.com/watch?v=wmbIebDsWn0)&#x20;
-
-### Pixilation
-
-* **Dot-Pixilation:** CC Ball Actions
-* **Square-Pixilation:** Mosaic
-* Plugins: tv pixels,
-
-### Multi-image spriting / instancing
-
-```javascript
-// Create a marker and use that to control the length of the comp you want instance
-
-seedRandom(0,true);
-m = thisComp.marker.nearestKey(time).time
-random(0, m)
-```
-
-​
+* 2021: Initial publish
+* 2024.09.27: Added introduction, moved troubleshooting guide to a separate page

@@ -1,13 +1,24 @@
 ---
-description: WIP 24.07.17
+description: WIP 24.09.27
 ---
 
 # Tooling
 
 ## **Introduction**
 
-* What is tooling: FFX preset, script.&#x20;
-* Why create tools? You want to capture and refine existing processes, tailoring to projects if necessary
+**What is Tooling in Motion Design**?&#x20;
+
+In Motion Design, _tooling_ refers to the building of various different kinds of components to streamline and optimize the design and animation process, enabling designers to work efficiently, automate repetitive tasks, and produce high quality animations. This could as simple as After Effects Animation Presets (FFX), rigs, scripts, or plugins.&#x20;
+
+**Why create tools?**
+
+&#x20;As we grow as designers, our focus shifts to advancing and scaling production to tackle bigger, more complex projects, often involving multiple team members. Creating tools helps increase our leverage—not just by streamlining our own work but by empowering others to perform at a higher level. This reduces the need for constant intervention, ensures design consistency, and optimizes existing processes. Tools allow us to elevate the team's capabilities while maintaining quality and efficiency.
+
+&#x20;
+
+
+
+...
 
 ## Preset Naming Convention Style Guide
 

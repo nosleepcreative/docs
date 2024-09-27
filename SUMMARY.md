@@ -7,6 +7,7 @@
 * [Getting Started with Expressions](after-effects/getting-started.md)
 * [Expressions & Snippets](after-effects/expressions/README.md)
   * [JSX Cheatsheet](after-effects/expressions/jsx-cheatsheet.md)
+  * [Expression Troubleshooting](after-effects/expressions/expression-troubleshooting.md)
   * [Utilities](after-effects/expressions/utilities.md)
   * [Shape & Mask](after-effects/expressions/shape-and-mask-paths.md)
   * [Type & Text](after-effects/expressions/type-and-text.md)
@@ -29,8 +30,14 @@
   * [Utilities](after-effects/scripting/utilities.md)
   * [Master Properties](after-effects/scripting/master-properties.md)
 * [ScriptUI](after-effects/scriptui.md)
-* [Tooling](after-effects/tooling.md)
-* [Toolkitting](after-effects/toolkitting.md)
+
+## Studio Ops
+
+* [Tooling](studio-ops/tooling.md)
+* [Toolkitting](studio-ops/toolkitting.md)
+* [Knowledge Base](studio-ops/knowledge-base.md)
+* [Naming Convention](studio-ops/naming-convention.md)
+* [DAM](studio-ops/dam.md)
 
 ## Cinema 4D
 
