@@ -12,31 +12,25 @@ description: >-
 
 ### **Constant Value Drift and Motion**
 
-#### 1. Linear Value Drift
+#### 1. Linear Value Drift Over Time
 
 ```javascript
 value + time * 50;
 ```
 
-#### 2. Apply Value Drift to Array Element eg. Position
+#### 2. Apply Value Drift to Array Element eg. Position Y
 
 ```javascript
-value + [time * 50, 0];
+value + [0, time * 5];
 ```
 
-#### **3. Offset Value Change**
+**3. Constant Horizontal Motion From Layer's Start Point**
 
-```javascript
-value + (time - inPoint) * 50;
-```
-
-**4. Constant Horizontal Motion**&#x20;
-
-```javascript
-x = position[0] + (time - inPoint) * (-10);
-y = position[1];
+<pre class="language-javascript"><code class="lang-javascript"><strong>offset = (time - inPoint) * -10;
+</strong><strong>x = position[0] + offset;
+</strong>y = position[1];
 [x, y]
-```
+</code></pre>
 
 ### Align to X-axis or Y-axis
 
